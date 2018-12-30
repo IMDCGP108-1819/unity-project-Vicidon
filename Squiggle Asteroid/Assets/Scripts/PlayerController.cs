@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float HorizontalMovement;
     public Rigidbody2D rb2d;
 
     [SerializeField]
     private float speed;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
