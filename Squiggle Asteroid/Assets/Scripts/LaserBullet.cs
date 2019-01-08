@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LaserBullet : MonoBehaviour
 {
+    
     public float MovementSpeed;
 
     // Update is called once per frame
@@ -17,4 +18,15 @@ public class LaserBullet : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        Asteroid enemy = hitInfo.GetComponent<Asteroid>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(50);
+        }
+        Destroy(gameObject);
+    }
+
 }

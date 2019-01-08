@@ -7,7 +7,8 @@ public class ShpaceshipShooting : MonoBehaviour
     public GameObject BulletPrefab;
     public GameObject[] BulletPool;
     public int MaxBullets;
-
+    
+   
     // Use this for initialization
     void Start()
     {
@@ -38,13 +39,15 @@ public class ShpaceshipShooting : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            
             GameObject bullet = GetSpareBullet();
 
-            if (bullet != null)
-            {
+           if (bullet != null)
+           {
                 bullet.SetActive(true);
                 bullet.transform.position = transform.position;
-            }
+           }
         }
     }
+
 }
