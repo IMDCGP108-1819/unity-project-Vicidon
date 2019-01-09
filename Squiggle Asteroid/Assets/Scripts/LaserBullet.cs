@@ -26,7 +26,7 @@ public class LaserBullet : MonoBehaviour
         {
             enemy.TakeDamage(50);
         }
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }
