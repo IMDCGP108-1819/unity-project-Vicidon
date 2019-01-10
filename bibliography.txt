@@ -1,0 +1,10 @@
+inScope Studios, 3. Unity 5 tutorial for beginners: 2D Platformer - Movement, [Online] 27.09.2015 Available online: https://www.youtube.com/watch?v=HpJMhNmpIxY&fbclid=IwAR2kK_yub0gai_zpoktGHm5oABDllk-06pc9vXwjLk38u1IBvRcNmKCLFxk [Date of access:10.01.2019]
+
+Brackeys, START MENU in Unity, [Online] 29.11.2017 Available online: https://www.youtube.com/watch?v=zc8ac_qUXQY [Date of access 10.01.2019]
+
+Brackeys, 2D Shooting in Unity (Tutorial), [Online] 16.09.2018 Available online: https://www.youtube.com/watch?v=wkKsl1Mfp5M&t=553s [Date of access 10.01.2019]
+
+Alexander Zotov, Making Unity 2D game. Make enemy collide with player and kill him. Simple UI., [Online] 20.02.2017 Available online: https://www.youtube.com/watch?v=JC59tDg4tmo[Date of access 10.01.2019]
+
+Alexander Zotov, How to spawn enemies randomly in Unity 2D game?, [Online] 17.01.2017 Available online:https://www.youtube.com/watch?v=AI8XNNRpTTw [Date of access 10.01.2019]
+
