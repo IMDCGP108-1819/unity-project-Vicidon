@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6707411452901848034}
   m_Layer: 0
   m_Name: Red_laser-ConvertImage_votu8o 1
-  m_TagString: Untagged
+  m_TagString: LaserBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -7,7 +7,7 @@ public class LaserBullet : MonoBehaviour
     
     public float MovementSpeed;
 
-    // Update is called once per frame
+    // Spawn a prefab and apply a force to it.
     void Update()
     {
         transform.position = new Vector3(transform.position.x,
@@ -19,6 +19,7 @@ public class LaserBullet : MonoBehaviour
         }
     }
 
+    //If the prefab conect with a object with a tag "Asteroid" it apply 50 damage and set the prefab inactive.
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Asteroid enemy = hitInfo.GetComponent<Asteroid>();

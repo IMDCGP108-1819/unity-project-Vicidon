@@ -5,8 +5,8 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     public int solidity = 100;
-    public GameObject deathEffect;
-
+    
+    //If the solidity of the object is 0 or less it dies(inactive).
     public void TakeDamage(int damage)
     {
         solidity -= damage;
@@ -16,9 +16,11 @@ public class Asteroid : MonoBehaviour
         }
     }
 
+    //Set the object in inactive.
     void Die()
-    {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(this.gameObject);
+    {        
+        gameObject.SetActive(false);
     }
+
+    
 }

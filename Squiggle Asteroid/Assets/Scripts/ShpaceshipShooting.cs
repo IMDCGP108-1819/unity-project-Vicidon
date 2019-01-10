@@ -4,37 +4,38 @@ using UnityEngine;
 
 public class ShpaceshipShooting : MonoBehaviour
 {
-    public GameObject BulletPrefab;
-    public GameObject[] BulletPool;
-    public int MaxBullets;
+    public GameObject LaserPrefab;
+    public GameObject[] LaserBulletPool;
+    public int MaxLaserBullets;
     
    
-    // Use this for initialization
+    // Creates a pool for the laser prefab with the prefab in it in inactive mode. 
     void Start()
     {
-        BulletPool = new GameObject[MaxBullets];
+        LaserBulletPool = new GameObject[MaxLaserBullets];
 
-        for (int i = 0; i < MaxBullets; i++)
+        for (int i = 0; i < MaxLaserBullets; i++)
         {
-            BulletPool[i] = Instantiate(BulletPrefab);
-            BulletPool[i].SetActive(false);
+            LaserBulletPool[i] = Instantiate(LaserPrefab);
+            LaserBulletPool[i].SetActive(false);
         }
     }
 
+    // If there are too many active prefabs it set the first one inactive.
     private GameObject GetSpareBullet()
     {
-        for (int i = 0; i < MaxBullets; i++)
+        for (int i = 0; i < MaxLaserBullets; i++)
         {
-            if (BulletPool[i].activeSelf == false)
+            if (LaserBulletPool[i].activeSelf == false)
             {
-                return BulletPool[i];
+                return LaserBulletPool[i];
             }
         }
 
         return null;
     }
 
-    // Update is called once per frame
+    // It fires the lasers.
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
