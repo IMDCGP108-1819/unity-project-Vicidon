@@ -1,0 +1,1 @@
+I built and ran the game on WebGL but when it came to psuh it in GitHub an error shows and does not give me to push it. When i tried to email the lecturer and explain the problem another error occured and did not allow me to send it. I tried counless times and without success.
